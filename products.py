@@ -1,8 +1,7 @@
 import os  # poerating system
 
-
 products = []
-if os.path.isfile('products.csv'):
+if os.path.isfile('products.csv'): #檢察檔案在不在
 	print('yeah! 找到檔案了')
 	# 讀取檔案
 	with open('products.csv', 'r', encoding='utf-8') as f:
@@ -15,7 +14,6 @@ if os.path.isfile('products.csv'):
 
 else:
 	print('找不到檔案.....')
-
 
 # 讓使用者輸入
 while True:
